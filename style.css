@@ -335,10 +335,20 @@ a {
 }
 
 /* Home Hero */
-.hero {
+/* .hero {
   position: relative;
   min-height: 100vh;
   display: flex;
+  overflow: hidden;
+  background-image: url(images/gh.png);
+  background-size: cover;
+  background-position: center;
+} */
+ .hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-end;
   overflow: hidden;
   background-image: url(images/gh.png);
   background-size: cover;
@@ -350,12 +360,20 @@ a {
   inset: 0;
   z-index: 1;
 }
-
+/* 
 .hero-content {
   position: relative;
   z-index: 2;
   padding: calc(var(--nav-h) + 2rem) 2rem 6rem;
   max-width: 860px;
+  animation: fadeUp 1.2s ease both;
+} */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: calc(var(--nav-h) + 5rem) 2rem 6rem;
+  max-width: 860px;
+  width: 100%;
   animation: fadeUp 1.2s ease both;
 }
 
